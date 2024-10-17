@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформа для обучения программированию</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/addon/edit/matchbrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/addon/lint/lint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/addon/lint/python-lint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/clike/clike.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ПЛАТФОРМА ДЛЯ ОБУЧЕНИЯ ПРОГРАММИРОВАНИЮ</h1>
+    </header>
+    <main>
+        <div class="left-column">
+            <section class="theory">
+                <h3>ТЕОРИЯ:</h3>
+                <div class="content">
+                    <p>Текст</p>
+                    <p>Картинки</p>
+                </div>
+            </section>
+            <section class="tasks">
+                <h3>ЗАДАЧИ:</h3>
+                <div class="content">
+                    <p>Текст</p>
+                    <p>Картинки</p>
+                </div>
+            </section>
+        </div>
+        <div class="right-column">
+            <section class="code-terminal">
+                <h3>Терминал для кода</h3>
+                <select id="lang-sel">
+                    <option value="python">Python</option>
+                    <option value="clike">C++</option>
+                </select>
+                <div id="code-input"></div>
+            </section>
+            <section class="output-terminal">
+                <h3>Output</h3>
+                <pre id="output"></pre>
+            </section>
+            <div class="buttons">
+                <button id="run-btn">ВЫПОЛНИТЬ КОД</button>
+                <button id="next-pg">СЛЕД. СТРАНИЦА →</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.js"></script>
+</body>
+</html>

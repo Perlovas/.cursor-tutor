@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.content {
+    min-height: 100px;
+}
+
+#code-input, #output {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #f8f8f8;
+    color: #333;
+    overflow-y: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#next-pg {
+    background-color: #2256ff;
+}
+
+#next-pg:hover {
+    background-color: #184dc0;
+}
+
+.CodeMirror {
+    height: auto;
+    font-size: 14px;
+}
+
+.cm-s-monokai .CodeMirror-gutters {
+    background-color: #272822;
+}
+
+.CodeMirror-lint-tooltip {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 2px 5px;
+    white-space: pre-wrap;
+    z-index: 100;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#lang-sel {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#lang-sel:hover {
+    border-color: #aaa;
+}
+
+#lang-sel:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
